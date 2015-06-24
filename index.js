@@ -19,7 +19,7 @@ var path = require('path');
 var root = path.normalize(__dirname + '/../..');
 
 module.exports = function (fromPath) {
-  return require(path.resolve(root, fromPath);
+  return require(path.resolve(root, fromPath));
 };
 module.exports.root = root;
 
