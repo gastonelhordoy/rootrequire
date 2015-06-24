@@ -5,15 +5,15 @@ Require files relative to your project root.
 ## Install
 
 ```
-npm install --save rootrequire
+npm install --save root-require
 ```
 
 ## Use
 
 ```js
 var
-  root = require('rootrequire'),
-  myLib = require(root + '/path/to/lib.js');
+  rootRequire = require('root-require'),
+  myLib = rootRequire('path/to/lib');
 ```
 
 ## Why?
@@ -23,6 +23,7 @@ var
 * Dazzle your coworkers.
 
 
-## Learn JavaScript with Eric Elliott
-
-This was written for the ["Learn JavaScript with Eric Elliott"](https://ericelliottjs.com) courses. Don't just learn JavaScript. Learn how to change the world.
+## More about the topic
+You can read more about this topic on the following discussions/blogs:
+[Better local require() paths for Node.js](https://gist.github.com/branneman/8048520)
+[Solving Nodejs Relative Requires](http://www.jondelamotte.com/solving-node-project-requires/)

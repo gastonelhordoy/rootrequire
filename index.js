@@ -7,7 +7,7 @@
 // Anywhere in your project:
 
 var root = require('root'),
-  someLib = require(root + '/lib/some-lib.js');
+  someLib = rootRequire('lib/some-lib.js');
 
 console.log(root); // /path/to/your/project/dir
 
@@ -16,6 +16,10 @@ console.log(root); // /path/to/your/project/dir
 'use strict';
 
 var path = require('path');
+var root = path.normalize(__dirname + '/../..');
 
-module.exports = path.resolve(__dirname + '/../..');
+module.exports = function (fromPath) {
+  return require(path.resolve(root, fromPath);
+};
+module.exports.root = root;
 

@@ -1,14 +1,14 @@
 {
-  "name": "rootrequire",
+  "name": "root-require",
   "version": "1.0.0",
-  "description": "npm install --save rootrequire # then `var root = require('rootrequire'), myLib = require(root + 'path/to/lib.js');`",
+  "description": "npm install --save root-require # then `var rootRequire = require('root-require'), myLib = rootRequire('path/to/lib');`",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/ericelliott/rootrequire.git"
+    "url": "git://github.com/gastonelhordoy/rootrequire.git"
   },
   "keywords": [
     "require",
@@ -21,7 +21,7 @@
   "author": "Eric Elliott",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ericelliott/rootrequire/issues"
+    "url": "https://github.com/gastonelhordoy/rootrequire/issues"
   },
-  "homepage": "https://github.com/ericelliott/rootrequire"
+  "homepage": "https://github.com/gastonelhordoy/rootrequire"
 }
